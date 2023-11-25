@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>It's Just a Promo</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="stopwatch.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            background-color: gray;
+        }
+        .btn {
+            border-radius: 10px;
+            padding: auto;
+            width: auto;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a href="#" class="navbar-brand">CLOCK</a>
+    </nav>
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-md-6 m-auto">
+                <div class="card">
+                    <div class="card-header bg-primary text-white text-center">
+                        <h3>Stopwatch</h3>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="display-2">
+                            <span id="minutes">00</span>:
+                            <span id="seconds">00</span>:
+                            <span id="m-seconds">00</span>
+                        </h1>
+                        <button id="start-btn" class="btn btn-success text-center">Start</button>
+                        <button id="stop-btn" class="btn btn-danger text-center">Stop</button>
+                        <button id="reset-btn" class="btn btn-warning text-center">Reset</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="stopwatch.js"></script>
+</body>
+</html>
